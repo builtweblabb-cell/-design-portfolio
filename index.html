@@ -14,139 +14,145 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d0d0d;
+      color: #ffffff;
       line-height: 1.6;
     }
 
+    /* HEADER */
     header {
-      padding: 60px 20px 40px;
-      background: #111;
+      text-align: center;
+      padding: 70px 20px 45px;
     }
 
     header h1 {
       font-size: 42px;
-      margin-bottom: 10px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
     }
 
     header p {
-      color: #aaa;
-      font-size: 18px;
-      max-width: 650px;
+      color: #bdbdbd;
+      font-size: 17px;
+      max-width: 600px;
       margin: auto;
     }
 
-    .container {
+    /* PORTFOLIO */
+    .portfolio {
       max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
 
-    .section-title {
-      font-size: 30px;
-      margin: 40px 0 25px;
+    .portfolio-title {
+      text-align: center;
+      margin-bottom: 30px;
     }
 
-    .portfolio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-bottom: 50px;
-    }
-
-    .project {
-      background: #1b1b1b;
-      border-radius: 15px;
-      overflow: hidden;
-      border: 1px solid #333;
-    }
-
-    .project img {
-      width: 100%;
-      display: block;
-      height: auto;
-    }
-
-    .project-info {
-      padding: 20px;
-    }
-
-    .project-info h3 {
+    .portfolio-title h2 {
+      font-size: 28px;
       margin-bottom: 8px;
-      font-size: 20px;
     }
 
-    .project-info p {
-      color: #aaa;
+    .portfolio-title p {
+      color: #999;
       font-size: 15px;
     }
 
-    .about {
-      max-width: 700px;
-      margin: 0 auto 50px;
-      color: #ccc;
-      font-size: 17px;
+    /* GRAPHICS */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
     }
 
+    .design-card {
+      background: #171717;
+      border-radius: 14px;
+      padding: 10px;
+      overflow: hidden;
+      border: 1px solid #262626;
+    }
+
+    .design-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 9px;
+    }
+
+    /* CONTACT */
     .contact {
-      background: #1b1b1b;
-      padding: 45px 20px;
-      border-radius: 18px;
-      margin-bottom: 50px;
-      border: 1px solid #333;
+      text-align: center;
+      padding: 70px 20px;
     }
 
     .contact h2 {
-      font-size: 30px;
+      font-size: 27px;
       margin-bottom: 12px;
     }
 
     .contact p {
       color: #aaa;
-      margin-bottom: 25px;
+      max-width: 550px;
+      margin: 0 auto 25px;
+      font-size: 15px;
     }
 
-    .whatsapp-btn {
+    .whatsapp-button {
       display: inline-block;
       background: #25D366;
-      color: white;
+      color: #ffffff;
       text-decoration: none;
-      padding: 15px 28px;
-      border-radius: 10px;
-      font-size: 17px;
+      padding: 14px 27px;
+      border-radius: 50px;
+      font-size: 16px;
       font-weight: bold;
-      transition: 0.3s;
+      transition: 0.2s ease;
     }
 
-    .whatsapp-btn:hover {
-      opacity: 0.85;
+    .whatsapp-button:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
     }
 
-    .phone {
-      margin-top: 15px;
-      color: #aaa;
-    }
-
+    /* FOOTER */
     footer {
-      padding: 30px 20px;
-      border-top: 1px solid #333;
+      text-align: center;
+      padding: 30px 20px 40px;
+      border-top: 1px solid #222;
+    }
+
+    footer p {
       color: #777;
       font-size: 14px;
     }
 
-    @media (max-width: 600px) {
+    /* MOBILE */
+    @media (max-width: 700px) {
+
+      header {
+        padding: 55px 20px 35px;
+      }
+
       header h1 {
-        font-size: 34px;
+        font-size: 32px;
       }
 
       header p {
-        font-size: 16px;
+        font-size: 15px;
       }
 
-      .section-title {
-        font-size: 26px;
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .portfolio-title h2 {
+        font-size: 25px;
       }
     }
   </style>
@@ -154,71 +160,93 @@
 
 <body>
 
+  <!-- HEADER -->
   <header>
     <h1>Built Weblabb</h1>
+
     <p>
-      Graphic Designer & Creative Designer
-    </p>
-    <p>
-      Custom flyers, promotional designs and branding projects created for clients.
+      Creative graphic design made to give brands, businesses and ideas
+      a clean and professional visual identity.
     </p>
   </header>
 
-  <main class="container">
 
-    <h2 class="section-title">My Work</h2>
+  <!-- PORTFOLIO -->
+  <section class="portfolio">
 
-    <section class="portfolio">
+    <div class="portfolio-title">
+      <h2>Selected Work</h2>
 
-      <div class="project">
-        <img src="IMG_2920.jpeg" alt="Graphic Design Project">
-        <div class="project-info">
-          <h3>Creative Design</h3>
-          <p>
-            Custom graphic design created for a client project.
-          </p>
-        </div>
+      <p>
+        A look at some of my recent graphic design work.
+      </p>
+    </div>
+
+
+    <div class="gallery">
+
+      <!-- DESIGN 1 -->
+      <div class="design-card">
+        <img src="IMG_2920.jpeg" alt="Graphic design project by Built Weblabb">
       </div>
 
-    </section>
 
-    <h2 class="section-title">About Me</h2>
+      <!-- DESIGN 2 -->
+      <div class="design-card">
+        <img src="IMG_2998.jpeg" alt="Graphic design project by Built Weblabb">
+      </div>
 
-    <section class="about">
-      <p>
-        I create modern and eye-catching graphic designs for individuals,
-        businesses and brands. My work includes flyers, promotional materials,
-        social media designs and branding projects.
-      </p>
-    </section>
+    </div>
 
-    <section class="contact">
+  </section>
 
-      <h2>Let's Work Together</h2>
 
-      <p>
-        Have a design project in mind? Contact me directly on WhatsApp.
-      </p>
+  <!-- CONTACT -->
+  <section class="contact">
 
-      <a
-        class="whatsapp-btn"
-        href="https://wa.me/233503833630"
-        target="_blank"
-      >
-        Chat With Me on WhatsApp
-      </a>
+    <h2>Let's Create Something Great</h2>
 
-      <p class="phone">
-        WhatsApp: 050 383 3630
-      </p>
+    <p>
+      Have a project in mind? I'd love to hear about it.
+      Send me a message and let's bring your idea to life.
+    </p>
 
-    </section>
+    <a
+      class="whatsapp-button"
+      href="https://wa.me/233503833630"
+      target="_blank"
+      rel="noopener noreferrer">
+      💬 WhatsApp Me
+    </a>
 
-  </main>
+  </section>
 
+
+  <!-- FOOTER -->
   <footer>
-    © 2026 Built Weblabb. All rights reserved.
+
+    <p id="thankYouMessage">
+      Thank you for visiting my page.
+    </p>
+
   </footer>
+
+
+  <!-- PERSONALIZED VISITOR MESSAGE -->
+  <script>
+
+    const visitorName = prompt("What's your name?");
+
+    if (visitorName && visitorName.trim() !== "") {
+
+      document.getElementById("thankYouMessage").textContent =
+        "Thank you for visiting my page, " +
+        visitorName.trim() +
+        "! I hope you enjoyed exploring my work.";
+
+    }
+
+  </script>
 
 </body>
 </html>
