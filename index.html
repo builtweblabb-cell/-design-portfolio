@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Built Weblabb | Design Portfolio</title>
+  <title>Built Weblabb | Creative Design Portfolio</title>
 
   <style>
     * {
@@ -23,24 +23,24 @@
     /* HEADER */
     header {
       text-align: center;
-      padding: 70px 20px 45px;
+      padding: 75px 20px 50px;
     }
 
     header h1 {
       font-size: 42px;
       font-weight: 700;
-      margin-bottom: 12px;
       letter-spacing: -1px;
+      margin-bottom: 14px;
     }
 
     header p {
-      color: #bdbdbd;
-      font-size: 17px;
-      max-width: 600px;
+      color: #b5b5b5;
+      font-size: 16px;
+      max-width: 620px;
       margin: auto;
     }
 
-    /* PORTFOLIO */
+    /* MY WORK */
     .portfolio {
       max-width: 1000px;
       margin: auto;
@@ -49,20 +49,20 @@
 
     .portfolio-title {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
 
     .portfolio-title h2 {
-      font-size: 28px;
+      font-size: 30px;
       margin-bottom: 8px;
     }
 
     .portfolio-title p {
-      color: #999;
+      color: #999999;
       font-size: 15px;
     }
 
-    /* GRAPHICS */
+    /* GRAPHIC DESIGNS */
     .gallery {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -71,10 +71,10 @@
 
     .design-card {
       background: #171717;
+      border: 1px solid #272727;
       border-radius: 14px;
       padding: 10px;
       overflow: hidden;
-      border: 1px solid #262626;
     }
 
     .design-card img {
@@ -87,27 +87,27 @@
     /* CONTACT */
     .contact {
       text-align: center;
-      padding: 70px 20px;
+      padding: 75px 20px;
     }
 
     .contact h2 {
-      font-size: 27px;
+      font-size: 28px;
       margin-bottom: 12px;
     }
 
     .contact p {
       color: #aaa;
       max-width: 550px;
-      margin: 0 auto 25px;
+      margin: 0 auto 27px;
       font-size: 15px;
     }
 
     .whatsapp-button {
       display: inline-block;
       background: #25D366;
-      color: #ffffff;
+      color: white;
       text-decoration: none;
-      padding: 14px 27px;
+      padding: 14px 28px;
       border-radius: 50px;
       font-size: 16px;
       font-weight: bold;
@@ -135,7 +135,7 @@
     @media (max-width: 700px) {
 
       header {
-        padding: 55px 20px 35px;
+        padding: 60px 20px 40px;
       }
 
       header h1 {
@@ -152,7 +152,7 @@
       }
 
       .portfolio-title h2 {
-        font-size: 25px;
+        font-size: 26px;
       }
     }
   </style>
@@ -162,38 +162,39 @@
 
   <!-- HEADER -->
   <header>
-    <h1>Built Weblabb</h1>
+    <h1>Creative Design Portfolio</h1>
 
     <p>
-      Creative graphic design made to give brands, businesses and ideas
-      a clean and professional visual identity.
+      Welcome to Built Weblabb — a collection of creative,
+      clean and professional graphic design work.
     </p>
   </header>
 
 
-  <!-- PORTFOLIO -->
+  <!-- MY WORK -->
   <section class="portfolio">
 
     <div class="portfolio-title">
-      <h2>Selected Work</h2>
+      <h2>My Work</h2>
 
       <p>
-        A look at some of my recent graphic design work.
+        Explore some of my graphic design projects.
       </p>
     </div>
 
 
     <div class="gallery">
 
-      <!-- DESIGN 1 -->
       <div class="design-card">
-        <img src="IMG_2920.jpeg" alt="Graphic design project by Built Weblabb">
+        <img
+          src="IMG_2920.jpeg"
+          alt="Graphic design project by Built Weblabb">
       </div>
 
-
-      <!-- DESIGN 2 -->
       <div class="design-card">
-        <img src="IMG_2998.jpeg" alt="Graphic design project by Built Weblabb">
+        <img
+          src="IMG_2998.jpeg"
+          alt="Graphic design project by Built Weblabb">
       </div>
 
     </div>
@@ -204,11 +205,11 @@
   <!-- CONTACT -->
   <section class="contact">
 
-    <h2>Let's Create Something Great</h2>
+    <h2>Let's Work Together</h2>
 
     <p>
-      Have a project in mind? I'd love to hear about it.
-      Send me a message and let's bring your idea to life.
+      Have a design project in mind?
+      Get in touch and let's bring your ideas to life.
     </p>
 
     <a
@@ -225,28 +226,11 @@
   <!-- FOOTER -->
   <footer>
 
-    <p id="thankYouMessage">
+    <p>
       Thank you for visiting my page.
     </p>
 
   </footer>
-
-
-  <!-- PERSONALIZED VISITOR MESSAGE -->
-  <script>
-
-    const visitorName = prompt("What's your name?");
-
-    if (visitorName && visitorName.trim() !== "") {
-
-      document.getElementById("thankYouMessage").textContent =
-        "Thank you for visiting my page, " +
-        visitorName.trim() +
-        "! I hope you enjoyed exploring my work.";
-
-    }
-
-  </script>
 
 </body>
 </html>
